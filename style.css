@@ -1,4 +1,4 @@
-/* Basic Style */
+/* basic style */
 li {
     list-style: none;
 }
@@ -11,6 +11,7 @@ button {
   color: #333;
   font-family: Lato, sans-serif;
 }
+/* heading style */
 .task-list-heading {
   color: #333;
   font-weight: 700;
@@ -20,6 +21,7 @@ button {
   margin: 0;
   text-transform: uppercase;    
 }
+/* header */
 .header {
   width: 500px;
   margin: 0 auto;
@@ -40,9 +42,7 @@ button {
     text-align: center;
   }
 }
-.task-list-add .task-list-heading {
-  margin: 0 auto 20px;
-}
+/* tasks list */
 .task-lists {
   display: block;
   width: 500px;
@@ -52,27 +52,10 @@ button {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
+  padding-left: 10px;
+  box-sizing: border-box;
+  font-size: 18px;
 }
-.new-task-item {
-  display: flex;
-}
-.task-list-items {
-  margin: 0;
-  padding: 0px;
-}
-.btn {
-  background: none;
-  border: 0px;
-  color: #888;
-  font-size: 15px;
-  width: 60px;
-  font-family: Lato, sans-serif;
-  cursor: pointer;
-}
-.btn:hover {
-  color: #3a3A3a;
-}
-/* Heading */
 .task-item-text {
   margin: 0;
   font-size: 18px;
@@ -88,7 +71,26 @@ button {
 .task-item-text:focus {
   color: #333;
 }
-/* New Task */
+.btn {
+  background: none;
+  border: 0px;
+  color: #888;
+  font-size: 15px;
+  width: 60px;
+  font-family: Lato, sans-serif;
+  cursor: pointer;
+}
+.btn:hover {
+  color: #3a3A3a;
+}
+
+/* new task */
+.task-list-add .task-list-heading {
+  margin: 0 auto 20px;
+}
+.new-task-item {
+  display: flex;
+}
 .new-task-label {
   display: block;
   margin: 0 0 20px;
@@ -96,7 +98,11 @@ button {
 .new-task-text {
   width: 318px;
 }
-/* Task list */
+/* task list */
+.task-list-items {
+  margin: 0;
+  padding: 0px;
+}
 .task-item {
   overflow: hidden;
   padding: 20px 0;
@@ -111,15 +117,6 @@ button {
 .task-item-check {
   margin: 0 10px;
 }
-.task-size {
-  padding-left: 10px;
-  box-sizing: border-box;
-  font-size: 18px;
-  width: 226px;
-}
-.task-item > .task-item-text {
-  width: 226px;
-}
 .del-btn-img {
   height: 2em;
   transform: rotateZ(45deg);
@@ -128,12 +125,12 @@ button {
 .del-btn-img:hover {
   transform: rotateZ(0);
 }
-/* Completed */
+/* completed */
 #completed-task-list .task-item-label {
   text-decoration: line-through;
   color: #888;
 }
-/* Edit Task */
+/* edit task */
 .task-item .task-item-text {
   display: none;
 }
