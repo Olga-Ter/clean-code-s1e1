@@ -39,6 +39,7 @@ var createNewTaskElement = function(taskString) {
   deleteButton.className = "delete-task-btn btn";
   deleteButtonImg.src = './remove.svg';
   deleteButtonImg.className = 'del-btn-img';
+  deleteButtonImg.setAttribute('alt', 'removeButton')
   deleteButton.appendChild(deleteButtonImg);
   //and appending.
   listItem.appendChild(checkBox);
@@ -48,7 +49,7 @@ var createNewTaskElement = function(taskString) {
   listItem.appendChild(deleteButton);
   return listItem;
 }
-var addTask=function() {
+var addTask = function() {
   console.log("Add Task...");
   //Create a new list item with the text from the #new-task:
   if (!taskInput.value) return;
@@ -83,10 +84,10 @@ var editTask = function() {
 };
 
 //Delete task.
-var deleteTask=function() {
+var deleteTask = function() {
   console.log("Delete Task...");
-  var listItem=this.parentNode;
-  var ul=listItem.parentNode;
+  var listItem = this.parentNode;
+  var ul = listItem.parentNode;
   //Remove the parent list item from the ul.
   ul.removeChild(listItem);
 }
@@ -123,9 +124,9 @@ addButton.addEventListener("click",ajaxRequest);
 var bindTaskEvents = function(taskListItem,checkBoxEventHandler) {
   console.log("bind list item events");
   //select ListItems children
-  var checkBox = taskListItem.querySelector("input[type=checkbox]");
-  var editButton = taskListItem.querySelector("button.edit-task-btn");
-  var deleteButton = taskListItem.querySelector("button.delete-task-btn");
+  var checkBox = taskListItem.querySelector(".check-task");
+  var editButton = taskListItem.querySelector(".edit-task-btn");
+  var deleteButton = taskListItem.querySelector(".delete-task-btn");
   //Bind editTask to edit button.
   editButton.onclick = editTask;
   //Bind deleteTask to delete button.
