@@ -60,12 +60,12 @@ button {
   height: 21px;
   margin: 0;
   padding: 0 9px;
-  border: 1px solid #dDd;
+  border: 1px solid #ddd;
   border-radius: 6px;
   font-family: Lato, sans-serif;
   font-size: 18px;
   line-height: 18px;
-  background: #FFF;
+  background: #fff;
   color: #888;
 }
 .task-item-text:focus {
@@ -81,7 +81,7 @@ button {
   cursor: pointer;
 }
 .btn:hover {
-  color: #3a3A3a;
+  color: #3a3a3a;
 }
 
 /* new task */
